@@ -1,0 +1,58 @@
+/* General Layout */
+html, body {
+  min-height: 100%;
+  margin: 0; /* Ensure there's no default margin */
+  box-sizing: border-box; /* Ensure padding and borders are included in width/height calculations */
+}
+
+/* Navbar */
+nav {
+  background-color: #FFD700; /* Deep Blue */
+  padding: 1rem;
+  box-sizing: border-box; /* Include padding in the width calculations */
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ensure it spans the full width */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav .space-x-6 a {
+  margin-left: 1.5rem;
+}
+
+/* Main Content */
+.container {
+  width: 100%; /* Ensure full width */
+  margin: 0 auto; /* Center content */
+  padding: 1.5rem;
+  box-sizing: border-box; /* Include padding in the width calculations */
+}
+
+/* Flex container that grows */
+.flex-grow {
+  flex-grow: 1;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937; /* Dark gray */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  box-sizing: border-box; /* Ensure padding is included */
+}

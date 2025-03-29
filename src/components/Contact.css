@@ -1,0 +1,68 @@
+/* Contact Section */
+.contact-container {
+  width: 100%; /* Ensure full width */
+  max-width: none; /* Remove the max-width limit */
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-list a {
+  color: #0073b1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.profile-image {
+  width: 200px; /* Adjusted size */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+  border: 2px solid #d1d5db; /* Matches Tailwind's border-gray-300 */
+  object-fit: cover; /* Ensures image fits properly */
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  gap: 20px; /* Adds space between image and text */
+  width: 100%; /* Ensure full width */
+  max-width: none; /* Remove the max-width limit */
+  margin: auto;
+  padding: 20px;
+}
+
+.about-image {
+  width: 100%; /* Make image responsive to available width */
+  max-width: 600px; /* Keep the image size within a limit */
+  height: 1300px; /* Maintain the aspect ratio */
+  border-radius: 10px; /* Optional: adds rounded edges */
+}
+
+.about-text {
+  flex: 1; /* Allows text to take up remaining space */
+  text-align: left;
+}
