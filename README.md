@@ -22,7 +22,7 @@ This portfolio highlights my work and development journey. It features various s
 
 - A homepage with an introduction and call-to-action.
 - A projects section showcasing my work.
-- A contact form to reach out to me.
+- A contact section to contact me
 
 It’s built using **React** for interactivity and **Tailwind CSS** for utility-first styling, enabling a responsive and clean design.
 
@@ -70,5 +70,5 @@ Once the application is running, you can:
 
 - Browse through the different sections of the portfolio.
 - View detailed descriptions of each project.
-- Use the contact form to get in touch with me.
+- Use the contact details to contact me.
 
