@@ -35,7 +35,7 @@ It’s built using **React** for interactivity and **Tailwind CSS** for utility-
 
 - **Responsive design**: The portfolio is fully responsive and optimized for both desktop and mobile devices.
 - **Interactive project sections**: Showcases various projects with descriptions, links, and interactive elements.
-- **Contact form**: Allows users to contact me directly through the form.
+
 
 ## Installation
 
