@@ -13,8 +13,7 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## About
 
