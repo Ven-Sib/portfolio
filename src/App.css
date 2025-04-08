@@ -1,22 +1,43 @@
 /* General Layout */
-html, body {
+html, body, #root, #root > div {
+  width: 100%;
   min-height: 100%;
-  margin: 0; /* Ensure there's no default margin */
-  box-sizing: border-box; /* Ensure padding and borders are included in width/height calculations */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Navbar */
 nav {
-  background-color: #FFD700; /* Deep Blue */
+  width: 100%;
+  background-color: #FFD700; /* This is gold, not blue as in your JSX */
   padding: 1rem;
-  box-sizing: border-box; /* Include padding in the width calculations */
+  box-sizing: border-box;
 }
 
 nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Ensure it spans the full width */
+  width: 100%;
+  max-width: 1200px; /* Add a max-width if desired */
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+nav .space-x-6 a {
+  margin-left: 1.5rem;
 }
 
 nav a {
@@ -29,9 +50,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-nav .space-x-6 a {
-  margin-left: 1.5rem;
-}
+
 
 /* Main Content */
 .container {
@@ -46,13 +65,18 @@ nav .space-x-6 a {
   flex-grow: 1;
 }
 
-/* Footer */
-footer {
-  background-color: #1f2937; /* Dark gray */
-  color: white;
+/* Ensure full height for Home page and others */
+.text-center {
   text-align: center;
-  padding: 1rem;
-  margin-top: auto;
-  font-size: 0.9rem;
-  box-sizing: border-box; /* Ensure padding is included */
 }
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.min-h-screen {
+  min-height: 100vh; /* Full height of the screen */
+}
+
+/* Other styles remain the same */

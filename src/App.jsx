@@ -1,38 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import React from 'react';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import './App.css'; // Importing the CSS file for global styles
+import './App.css';
 
 function App() {
-  const [bgPosition, setBgPosition] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setBgPosition(window.scrollY * 0.5); // Adjust scrolling speed
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <Router>
-      <div
-        className="flex flex-col min-h-screen text-gray-900"
-        style={{
-          backgroundImage: "url('/job.jpg')",
-          backgroundSize: 'cover',
-          backgroundAttachment: 'fixed',
-          backgroundPosition: `center ${bgPosition}px`,
-          transition: 'background-position 0.1s ease-out',
-        }}
-      >
-        {/* Navbar */}
-        <nav className="bg-blue-600 p-4">
-          <div className="container mx-auto flex justify-between items-center">
+      <div style={{ width: '100%', display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        {/* Navbar - removed container class which might be limiting width */}
+        <nav>
+          <div className="container">
             <Link to="/" className="text-white text-2xl">Home</Link>
             <div className="flex space-x-6">
               <Link to="/about" className="text-white">About</Link>
@@ -43,7 +23,7 @@ function App() {
         </nav>
 
         {/* Main content */}
-        <div className="flex-grow container mx-auto px-4 py-6">
+        <div className="flex-grow container">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -52,8 +32,8 @@ function App() {
           </Routes>
         </div>
 
-        {/* Footer */}
-        <footer className="bg-gray-800 text-white text-center py-6 mt-8">
+        {/* Footer - removed classes that might be limiting width */}
+        <footer>
           <p>&copy; 2025 My Portfolio. All rights reserved.</p>
         </footer>
       </div>

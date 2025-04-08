@@ -3,6 +3,7 @@
   width: 100%; /* Ensure full width */
   max-width: none; /* Remove the max-width limit */
   margin: auto;
+  height: auto;
   padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
@@ -65,4 +66,11 @@
 .about-text {
   flex: 1; /* Allows text to take up remaining space */
   text-align: left;
+}
+
+.home-image {
+  width: 100%; /* Make image responsive to availab width */
+  max-width: 1300px; /* Keep the image size within a limit */
+  height: 500px; /* Maintain the aspect ratio */
+  border-radius: 10px; /* Optional: adds rounded edges */
 }
