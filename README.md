@@ -1,10 +1,8 @@
-Here’s a well-structured README template for your portfolio built with React and Tailwind CSS:
 
----
 
 # My Portfolio
 
-Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a software developer, built using React and styled with Tailwind CSS. 
+Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a software developer, built using React and styled with Tailwind CSS.follow this link to explore https://ven-sib.github.io/portfolio/
 
 ## Table of Contents
 
