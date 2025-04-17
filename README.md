@@ -2,7 +2,7 @@
 
 # My Portfolio
 
-Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a software developer, built using React and styled with Tailwind CSS.follow this link to explore https://ven-sib.github.io/portfolio/
+Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a software developer, built using React and styled with Tailwind CSS.follow this link to explore 
 
 ## Table of Contents
 
